@@ -1,0 +1,38 @@
+sockets work based on events , there are some reserved events , which can be accessed using the socket object on the server side
+
+these are -
+connect
+message
+disconnect
+reconnect
+ping
+join and
+leave
+
+the client side socket object also provide us with some reserved events , which are -
+connect
+connect_error
+connect_timeout
+reconnect etc
+
+In hello world example , we used the connection and disconnection events to log when a user connected and and left . Now we will be using the message events
+to pass message from the server to the client . To do this, modify the io.co ('connection',function(socket)) call to
+
+Socket .IO enables real -time bi-directional event based communication . It works on every platform browser or device ,focusing equally on realibility and speed
+Socket. IO is built on top of the web sockets  api (client side ) and node.js . it is one of the most depended upon libarary on npm (node packet manager ).
+
+Real-time application:
+A real time application (RTa) is an application that functions within a period that user senses as immediate or current
+
+some examples of real-time applications are-
+Instant messengers- chat aplication like whatsap , facebook , messenger , etc . you need not refresh yoyur app/website to recieve new messages
+
+Push nortification:
+when someone tags you in a picture on facebook, you recieve a nortification instantly.
+
+Collaboration application :
+app like google docs, which allow simultaneously and apply changes to all people to update same documents simultaneously and apply changes to all peaple's
+instances.
+
+online gaming :
+games like counter strike , call of duty ,
